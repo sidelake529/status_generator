@@ -14,7 +14,7 @@ box_width = 50
 box_height = 100
 margin = 20
 text_margin_x = 5
-text_margin_y = -25
+text_margin_y = 5
 
 def generate_status_image(stats):
     # imageフォルダからstatus_template.pngをロード
@@ -33,7 +33,7 @@ def generate_status_image(stats):
     }
 
     # フォントをロード
-    font = ImageFont.truetype("comic.ttf", size=100) # フォントのパスとサイズは適宜調整
+    font = ImageFont.truetype("font/mitimasu.ttf", size=100) # フォントのパスとサイズは適宜調整
 
     # 各ステータスの四角と数値を描画
     for stat, value in stats.items():
