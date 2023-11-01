@@ -61,6 +61,10 @@ def generate_status_image(stats):
 
 
 st.title("キャラクターステータス画像生成")
+st.markdown("""
+## 概要
+0～10の整数を入力して下部のボタンを押すと、キャラクターステータスの画面が生成されます。
+""")
 
 # ステータス入力
 vit_ = st.number_input('VIT', min_value=0, max_value=10, value=0)
